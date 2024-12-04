@@ -1,0 +1,44 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add some styles for body*/
+body {
+  min-height: 100vh;
+  max-width: 1280px;
+  margin: 0 auto;
+  color: #cbd5e1;
+  font-family: "Tajawal", sans-serif;
+  line-height: 1.5;
+  background-image: url("./bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  padding: 4rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 720px) {
+  main {
+    flex-direction: row;
+  }
+}
